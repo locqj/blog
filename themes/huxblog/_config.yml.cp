@@ -5,8 +5,4 @@
 # https://github.com/chriskempson/tomorrow-theme
 # night yilia - https://github.com/litten/hexo-theme-yilia
 highlight_theme: normal
-menu:
-    home: /
-    categories: /categories
-    archives: /archives
-    tags: /tags
+
