@@ -7,6 +7,8 @@ layout: layout
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
 
 <!-- Post Header -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 <style type="text/css">
     header.intro-header{
         background-image: url('<%= page["header-img"] || config.root + config["header-img"] %>')
@@ -28,6 +30,7 @@ layout: layout
                         Posted by <%- page.author || config.author %> on
                         <%= page.date.format(config.date_format) %>
                     </span>
+                    本文总阅读量<span id="busuanzi_value_page_pv"></span>次
                 </div>
             </div>
         </div>
