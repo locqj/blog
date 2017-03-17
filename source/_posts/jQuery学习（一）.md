@@ -4,9 +4,11 @@ date: 2017-03-15 21:45:27
 tags: [技术,jQuery]
 ---
 
-# jQuery淡入淡出，隐藏显示，滑动，回调
+# jQuery效果
 ---
+  
   [jQuery api](http://api.jquery.com/)
+
 ---
 ## 淡入淡出
   * fadeIn(time)
@@ -106,7 +108,47 @@ tags: [技术,jQuery]
 ```
 
 ---
+## 动画
+  jQuery animate() 方法用于创建自定义动画。
+  $(selector).animate({params},speed,callback);
+```javascript
+ //多个参数遍历
+  $("button").click(function(){
+  $("div").animate({
+    left:'250px',
+    opacity:'0.5',
+    height:'150px',
+    width:'150px'
+  });
+});
+ //使用相对值
+  $("button").click(function(){
+  $("div").animate({
+    left:'250px',
+    height:'+=150px',
+    width:'+=150px'
+  });
+});
+ //使用预设值，默认情况下，所有的 HTML 元素有一个静态的位置，且是不可移动的。 如果需要改变为，我们需要将元素的 position 属性设置为 relative, fixed, 或 absolute!
+ $(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      height:'toggle'
+    });
+  });
+});
+ //使用队列，按照队列执行
+ $("button").click(function(){
+  var div=$("div");
+  div.animate({height:'300px',opacity:'0.4'},"slow");
+  div.animate({width:'300px',opacity:'0.8'},"slow");
+  div.animate({height:'100px',opacity:'0.4'},"slow");
+  div.animate({width:'100px',opacity:'0.8'},"slow");
+});
+```
 
+
+---
 ## 回调
 动画执行完后可执行的操作
 
