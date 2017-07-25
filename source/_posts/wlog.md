@@ -382,3 +382,28 @@ done
 
 ### hexo
    * 记得linux下面文件权限问题，将new的文章权限改成当前用户权限，不然就老是报```hexo  Cannot set property 'lastIndex' of undefined```
+
+### linux
+   * 不同权限用户的公钥也不一样，root的id_rsa.pub 的公钥和locqj的id_rsa.pub的公钥是不一样的
+
+
+# 7-25
+
+### linux
+   * 重新读取.zshrc，source .zshrc
+   * source 改变配置文件的时候需要用到 source xxx
+   * tree -l 当前路径下的文件 -d 是目录 -a所有 -c加上色彩 -L level 显示一级目录和文件
+   * vim
+      * 5dd 删除当前行和之后四行， 3x是删除当前字符和之后两个字符 d$删除到行尾，d0删除到行头 dW删除当前字符到下一个单词
+      * yy 复制 具体和上面一样 ，p是粘贴
+      * u撤销， J是合并当前行和下一行， /xxx 搜索 
+      * :n 下一个文件 :N 上一个文件 :buffers 正在编译的文件列表 :e xxx 文件名就载入多一个文件：
+   * scp
+      * 本地上传服务器 ```scp /home/liujia/file.1txt  liujia@172.16.252.32:/user/liujia```
+      * 服务器下载 ```scpliujia@172.16.252.32:/user/liujia/file1.txt /home/liujia```
+      * 参数： -r整个目录， -v 提示文件信息， -p保留源文件的建立时间
+   * python
+      * tup1 = (50,); 一个元组的时候需要加，
+      * Python的from语句让你从模块中导入一个指定的部分到当前命名空间中。语法如下：```from modname import name1[, name2[, ... nameN]]``` 也可以是* 
+      * __init__.py引入包，然后里面的函数名必须要有和from xxx import xxx 名字必须一样 这个引的是.py文件里面的函数，是包的入口文件
+      * raw_input('xxx') 或 input 输入-》类似scanf
