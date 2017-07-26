@@ -407,3 +407,20 @@ done
       * Python的from语句让你从模块中导入一个指定的部分到当前命名空间中。语法如下：```from modname import name1[, name2[, ... nameN]]``` 也可以是* 
       * __init__.py引入包，然后里面的函数名必须要有和from xxx import xxx 名字必须一样 这个引的是.py文件里面的函数，是包的入口文件
       * raw_input('xxx') 或 input 输入-》类似scanf
+
+
+# 7-26
+
+### python
+   * 错误提醒：
+     - 忘记在 if , elif , else , for , while , class ,def 声明末尾添加 ：（导致 “SyntaxError ：invalid syntax”）
+     - 使用 = 而不是 ==（导致“SyntaxError: invalid syntax”）
+
+
+### shell
+   * 数组定义STORE=('hjs00002' 'hjs00003' 'hjs00004' 'hjs00005') 数据之间不需要有分号
+   * 遍历数组 for store_code in ${STORE[@]} 所有成${STORE[@]}
+   * if判断[]中括号前后必须空格，除了最后else不需要then，if， elif 都要接then才能执行
+  
+### php
+   * 数组去重复值 array_unique
