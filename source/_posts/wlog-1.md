@@ -430,3 +430,22 @@ done
 
 ### hexo
    * 报错```Cannot set property 'lastIndex' of undefined``` 是配置文件_config.yml中的highlight配置设置错误，将```auto_detect: false``` 。
+
+### linux
+   * crontab
+       * crontab -e edit crontab -l list 
+       * 服务的控制目录在/etc/init.d/cron {restart|start|stop}
+    
+   * tail -f 监视者模式，循环监视最后的数据，通常用在查看日志主要是-f
+   * 配置vhost，在/etc/nginx/sites-enabled 里面引用，然后在/etc/hosts 文件中指向127.0.0.1 xxx.com 和你的配置文件的域名一样
+
+### php
+   * array_reverse() 数组反转，后进先出
+   * 记住类名首字母大写
+
+### 面向对象基本原则
+   1. 单一原则：一个类，只需要做好一件事情。
+   2. 开放封闭：一个类，应该是可扩展，而不可以修改来增加功能。
+   3. 依赖倒置：一个类，不应该强依赖另一个类。每个类对于另外一个类是可以被替换的。依赖注入。
+   4. 配置化：尽量可能使用配置，而不是硬编码。
+   5. 面向借口的编程：只需要关心接口，不要关心实现
