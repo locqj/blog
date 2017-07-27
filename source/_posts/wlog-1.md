@@ -1,7 +1,7 @@
 ---
 title: wlogs
-date: 2017-07-24 19:41:27
-tags: 个人日常整理
+date: 2017-07-26 19:41:27
+tags: [个人日常整理]
 ---
 
 # WLOGS
@@ -424,3 +424,9 @@ done
   
 ### php
    * 数组去重复值 array_unique
+
+
+# 7-27
+
+### hexo
+   * 报错```Cannot set property 'lastIndex' of undefined``` 是配置文件_config.yml中的highlight配置设置错误，将```auto_detect: false``` 。
