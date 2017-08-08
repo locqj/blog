@@ -464,3 +464,12 @@ done
 ### 阿里云
    * 80端口默认关闭，安全组添加80/80的端口
    * phpmyadmin权限不得为777权限过高，也会限制不得访问
+
+
+# 8-8
+
+### linux 
+   * 跳轉到指定行 :n 
+   * 解壓tag.gz的方法 tag -xvrf xxx
+### php
+   * 时间戳 time(), strtotime()
