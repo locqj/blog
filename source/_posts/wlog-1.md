@@ -470,6 +470,20 @@ done
 
 ### linux 
    * 跳轉到指定行 :n 
-   * 解壓tag.gz的方法 tag -xvrf xxx
+   * 解壓tag.gz的方法 tag -xzvf xxx
+
+# 8-10
+
 ### php
-   * 时间戳 time(), strtotime()
+  * 獲取時間戳 time(),
+  * 將當前日期轉化爲時間戳（固定格式） $now = date('Y-m-d', time());
+  * 自定義時間戳 $make_time = mktime(0, 0, 0, 8, 10, 2017);
+  * 時間戳轉化爲時間 strtotime（）
+
+# 8-12
+### git
+  * git强制覆盖本地文件```git fetch --all  git reset --hard origin/master git pull```
+
+# 8-13
+### mysql
+  * 1045 是登錄配置問題，通常爲密碼錯誤
